@@ -50,3 +50,37 @@ Swift 结合了现代编程语言的最佳特性，同时保持与现有 Objecti
 
 二、环境搭建
 --------------------
+
+如果你手里没有苹果设备，可以直接使用 Linux 或者 Windowd 作为学习语言的平台，无伤大雅。
+等你练习两年半再买苹果设备来得及，防止买前生产力，买后爱奇艺。
+
+以 Ubuntu22.04 为例， 搭建 Swift 编译环境。
+
+访问 `安装 Swift <https://www.swift.org/install/>`_, 选择自己的平台，下载安装。
+
+.. image:: images/swift_install.png
+   :alt: 图片加载失败
+
+下载完成后进行下面的操作(版本可能会有差异，注意细节):
+
+.. code-block:: shell
+   
+   # 将安装包直接拷贝到 /opt 目录下
+   sudo cp swift-6.0.3-RELEASE-ubuntu22.04.tar.gz /opt
+   # 解压安装包
+   sudo tar -xf swift-6.0.3-RELEASE-ubuntu22.04.tar.gz
+   # 删除压缩包
+   sudo rm swift-6.0.3-RELEASE-ubuntu22.04.tar.gz
+   # 添加二进制路径到环境变量
+   sudo vim ~/.bashrc
+   # 添加如下内容
+   export PATH=/opt/swift-6.0.3-RELEASE-ubuntu22.04/usr/bin:$PATH
+   #保存退出后重新加载环境变量
+   source ~/.bashrc
+   # 使用命令检查是否否安装成功
+   swift --version
+   # 输出如下内容说明安装成功
+   Swift version 6.0.3 (swift-6.0.3-RELEASE)
+   Target: x86_64-unknown-linux-gnu
+   
+安装完成
