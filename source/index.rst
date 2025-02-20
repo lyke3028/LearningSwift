@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-学习 Swift
+Swift 基础
 ====================
 
 一、简介
@@ -64,7 +64,7 @@ Swift 结合了现代编程语言的最佳特性，同时保持与现有 Objecti
 下载完成后进行下面的操作(版本可能会有差异，注意细节):
 
 .. code-block:: shell
-   
+
    # 将安装包直接拷贝到 /opt 目录下
    sudo cp swift-6.0.3-RELEASE-ubuntu22.04.tar.gz /opt
    # 解压安装包
